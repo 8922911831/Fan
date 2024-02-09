@@ -1,0 +1,34 @@
+<!--wap in js to start fan-->
+<html>
+    <haed>
+        <script>
+            var i=90;
+            function moveFan()
+            {
+                i=i+30;
+                var im=document.getElementById("img1");
+                im.style="transform:rotate("+i+"deg)";
+                window.setTimeout("moveFan()",30);  
+               
+            } 
+        </script>
+    </haed>
+    <body>
+        <h1><center>Fan ko Chalane Ke Liye Button Ko Dabaye</center></h1>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <img src="fan.jpg" height="400px" width="400px" id="img1"/>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn" value="START" style="font-size: 25px; background-color: navy; color: red;" onclick="moveFan()"/>
+
+        </center>
+    </body>
+</html>
